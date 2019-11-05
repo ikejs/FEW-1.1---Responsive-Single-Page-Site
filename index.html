@@ -3,14 +3,26 @@
     <head>
         <title>Ike's Responsive Single Page Site</title>
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheets/main.css">
     </head>
     <body>
+        <section id="nav">
+            <ul>
+                <li class="nav-brand"><a href="#">PRODUCER INFO</a></li>
+                <li class="nav-item"><a href="#more">More</a></li>
+                <li class="nav-item"><a href="#newsletter">Newsletter</a></li>
+                <li class="nav-item"><a href="#quote">Dre</a></li>
+                <li class="nav-item"><a href="#types">Types</a></li>
+                <li class="nav-item"><a href="#">Home</a></li>
+            </ul>
+        </section>
         <section id="banner">
             <h1>Music Production</h1>
-            <h2>is fun and cool</h2>
+            <h2>Information</h2>
         </section>
-        <section id="info">
+        <div class="fade"></div>
+        <section id="types">
             <header>
                 <h3>Types of Music Production</h3>
                 <p>Choose a type of music production to learn more about.</p>
@@ -38,6 +50,28 @@
                     <button onclick="window.open('https://en.wikipedia.org/wiki/Rock_music', '_blank')">Learn more</button>
                 </div>
             </div>
+        </section>
+        <section id="quote">
+            <blockquote>
+                <div id="dre"></div>
+                <h2 style="text-align:left;margin-left:40px;color:white;opacity: 0.5;"><span class="fa fa-quote-left"></span></h2>
+                <h1>When the ideas are coming, I don't stop until the ideas stop because that train doesn't come along all the time.</h1>
+                <h2 style="text-align:right;margin-right:40px;color:white;opacity: 0.5;"><span class="fa fa-quote-right"></span></h2>
+                <footer>- DR. DRE</footer>
+            </blockquote>
+        </section>
+        <section id="newsletter">
+            <h1>Sign Up for our Newsletter</h1>
+            <p>Weekly emails regarding all things music production!</p>
+            <form>
+                <input required type="email" placeholder="Email" />
+                <input type="submit" />
+            </form>
+        </section>
+        <section id="more">
+            <h1>Here is more</h1>
+            <p> information about music production</p>
+            <img src="images/more_bg.jpg">
         </section>
     </body>
 </html>

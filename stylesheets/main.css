@@ -11,12 +11,37 @@ section > section:nth-child(2n) {
     text-align: right;
 }
 
-header {
-    margin: 0 0 5em 0;
-}
-
 header h3 {
     font-size: 2em;
+}
+
+#nav {
+    padding: 1em 2em 3em 1em;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nav li a {
+    margin: 0 0 0 1em;
+    text-decoration:none;
+}
+
+
+.nav-item {
+    float:right;
+    padding: 0;
+    margin: 0;
+    color: #380752;
+}
+
+.nav-brand a {
+    padding: 0;
+    margin: 0;
+    float:left;
+    color:black;
 }
 
 #banner {
@@ -27,11 +52,22 @@ header h3 {
     color: white;
     font: Helvetica;
     text-transform: uppercase;
-    padding: 5rem 5rem 8rem 5rem;
+    padding: 10rem 5rem 5em 5rem;
+    text-shadow: 6px 3px black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+}
+
+.fade {
+    position: relative;
+    bottom: 25em;
+    height: 25em;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    width:100%;
+    margin-bottom: -30em;
 }
 
 #banner h1 {
@@ -39,19 +75,18 @@ header h3 {
     font-weight: bold;
 }
 
-#info {
-    margin-top: -4rem;
+#types {
     display: block;
     padding: 5em 5em 0 5em;
-    background-color: white;
-    border-radius: 3em 3em 0 0;
+    color: black;
+    margin-bottom: 5em;
 }
 
 .cards {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     display: flex;
 }
@@ -62,6 +97,7 @@ header h3 {
     border: 0.1em solid;
     border-radius: 1em;
     padding: 2em;
+    margin: 0 2em 0 2em;
     text-align: center;
     color: white;
     background-size: cover;
@@ -136,4 +172,91 @@ header h3 {
 
 #rock {
     background-color: darkred;
+}
+
+#quote {
+    background-image: url("../images/dre_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    font: Helvetica;
+    text-transform: uppercase;
+    padding: 10rem 5rem 10em 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#dre {
+    width: 20em;
+    height: 20em;
+    margin-right: 3em;
+    -webkit-border-radius: 10em;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 20em;
+    -moz-background-clip: padding;
+    border-radius: 20em;
+    border: 8px solid white;
+    background-clip: padding-box;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../images/dre.jpg')
+}
+
+#quote h1 {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#newsletter {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#newsletter input[type='email'] {
+    border-radius: 6px;
+    border: 2px solid #380752;
+    padding: 1em;
+    font-size: 1em;
+    width: 15em;
+}
+
+#newsletter input[type='submit'] {
+    border-radius: 6px;
+    margin-left: 1em;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+    color:white;
+    background-color: #380752;
+}
+
+#more {
+    margin-top: 2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow:hidden;
+    box-shadow: inset 0 0 100px black;
+    background: black;
+    color:white;
+}
+
+#more img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .2;
+}
+
+#more h1 {
+    font-size: 25pt;
+    text-transform: uppercase;
+    font-weight: 400;
 }
